@@ -2,11 +2,7 @@
 
 > The ultimate pump.fun-style meme token launchpad built on X Layer (OKX zkEVM L2) with advanced bonding curves, automatic liquidity provision, and comprehensive anti-rug protection.
 
-## 🎯 Hackathon Submission for DoraHacks XLayer Challenge
-
-**Prize Pool: $5,000 USD** | **Deadline: September 5, 2025**
-
-## 🌟 Key Features
+## ✨ Features
 
 - ✅ **Fair Launch**: No pre-allocations, equal opportunity for all participants
 - ✅ **Bonding Curve**: Exponential pricing with automatic price discovery
