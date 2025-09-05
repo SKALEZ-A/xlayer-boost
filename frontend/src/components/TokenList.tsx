@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 
 // Mock data for demonstration
@@ -44,7 +44,7 @@ const mockTokens = [
 ];
 
 export default function TokenList() {
-  const [tokens, setTokens] = useState(mockTokens);
+  const [tokens] = useState(mockTokens);
 
   return (
     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
@@ -108,7 +108,7 @@ export default function TokenList() {
                 ></div>
               </div>
               <p className="text-xs text-gray-400 mt-1">
-                {token.progress >= 80 ? 'Ready for DEX migration!' : `${(80 - token.okbReserve).toFixed(1)} OKB to go`}
+                {token.progress >= 80 ? 'Ready for DEX migration!' : `${(80 - parseFloat(token.okbReserve)).toFixed(1)} OKB to go`}
               </p>
             </div>
 

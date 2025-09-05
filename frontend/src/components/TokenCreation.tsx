@@ -2,10 +2,8 @@
 
 import { useState } from 'react';
 import { useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
-import { parseEther } from 'ethers/lib/utils';
 import Image from 'next/image';
 
-const FACTORY_ADDRESS = '0x0000000000000000000000000000000000000000'; // Will be updated after deployment
 const CREATION_FEE = '1.0'; // 1 OKB
 
 export default function TokenCreation() {
@@ -13,7 +11,7 @@ export default function TokenCreation() {
   const [tokenSymbol, setTokenSymbol] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const { writeContract, data: hash } = useWriteContract();
+  const { data: hash } = useWriteContract();
   const { isLoading: isConfirming } = useWaitForTransactionReceipt({ hash });
 
   const handleCreateToken = async () => {
