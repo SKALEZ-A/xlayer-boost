@@ -1,0 +1,44 @@
+{
+  "name": "xlayer_pumpfun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:gas": "REPORT_GAS=true npx hardhat test",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network xlayer",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network xlayerMainnet",
+    "deploy:dex": "npx hardhat run scripts/deployDEX.js --network xlayer",
+    "check:balance": "npx hardhat run scripts/getTestTokens.js --network xlayer",
+    "verify:testnet": "npx hardhat verify --network xlayer",
+    "verify:mainnet": "npx hardhat verify --network xlayerMainnet",
+    "clean": "npx hardhat clean",
+    "node": "npx hardhat node",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run node\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "chai": "^6.0.1",
+    "dotenv": "^17.2.2",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.8.0",
+    "hardhat": "^3.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0"
+  },
+  "type": "module"
+}

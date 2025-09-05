@@ -1,0 +1,63 @@
+# Cursor Rules: XLayer Pump.fun Launchpad
+
+## Project Intelligence
+
+### Winning Strategy
+- **Go Beyond Requirements**: Add anti-rug mechanisms, referral system, governance features
+- **Production Ready**: Comprehensive testing, documentation, deployment scripts
+- **User Experience**: Intuitive design, mobile-responsive, clear onboarding
+- **Security First**: Multiple security patterns, audit-ready code
+
+### Technical Patterns
+- **Factory Pattern**: PumpFactory creates standardized token pairs
+- **Bonding Curve**: Exponential pricing with OKB accumulation
+- **Router Pattern**: PumpRouter handles swaps and fee distribution
+- **Security Patterns**: ReentrancyGuard, Ownable, Pausable
+
+### Development Workflow
+- **Test-Driven**: Write tests before implementation
+- **Modular Design**: Separated concerns across contracts
+- **Gas Optimization**: Efficient storage and operations
+- **Error Handling**: Comprehensive error states and recovery
+
+### X Layer Specifics
+- **Gas Token**: OKB with fixed 21M supply
+- **High TPS**: Optimized for 5,000 TPS capability
+- **ZK Proofs**: Pessimistic proofs for cross-chain
+- **EVM Compatible**: Standard Ethereum development tools
+
+### Frontend Best Practices
+- **TypeScript**: Type safety throughout the application
+- **Component Composition**: Reusable, atomic components
+- **State Management**: Zustand for global state
+- **Web3 Integration**: ethers.js + wagmi for wallet connections
+
+### Security Considerations
+- **Input Validation**: All user inputs validated
+- **Access Control**: Role-based permissions
+- **Emergency Functions**: Pause and emergency withdrawal
+- **Audit Preparation**: Clean, well-documented code
+
+### User Experience Focus
+- **One-Click Creation**: Simple token deployment process
+- **Real-Time Updates**: Live price and progress tracking
+- **Clear Feedback**: Loading states, success/error messages
+- **Mobile First**: Responsive design for all devices
+
+### Performance Optimization
+- **Lazy Loading**: Progressive component loading
+- **Caching**: Efficient data fetching and storage
+- **Batch Operations**: Multiple operations in single transactions
+- **Code Splitting**: Optimized bundle sizes
+
+### Testing Strategy
+- **Unit Tests**: Individual contract functions
+- **Integration Tests**: Cross-contract interactions
+- **E2E Tests**: Complete user journeys
+- **Security Tests**: Reentrancy and overflow protection
+
+### Deployment Strategy
+- **Testnet First**: Thorough testing on X Layer testnet
+- **Migration Scripts**: Automated deployment process
+- **Verification**: Contract source code verification
+- **Documentation**: Complete setup and usage guides
