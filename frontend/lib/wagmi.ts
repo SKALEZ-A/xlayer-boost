@@ -4,7 +4,7 @@ import { xLayer, xLayerTestnet } from 'viem/chains';
 
 export const config = getDefaultConfig({
   appName: 'XLAYER BOOST',
-  projectId: 'xlayer-boost',
+  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'demo',
   chains: [
     {
       id: 1952,
