@@ -1,4 +1,4 @@
-# 🚀 XLayer Pump.fun Deployment Guide
+# 🚀 Deployment guide
 
 ## Prerequisites
 
